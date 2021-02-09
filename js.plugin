@@ -23,10 +23,5 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 #哔哩哔哩1080+
 http-response https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/BiliHD.js, requires-body=true, timeout=10, tag=BiliHD.js
 
-[URL Rewrite]
-# 漫画去广告
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
-^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash url reject-dict
-
 [MITM]
-hostname = trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,mp.weixin.qq.com,api.bilibili.com,manga.bilibili.com
+hostname = trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,mp.weixin.qq.com,api.bilibili.com
