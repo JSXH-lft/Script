@@ -29,4 +29,4 @@ http-response https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash url reject-dict
 
 [MITM]
-hostname = trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,mp.weixin.qq.com,api.bilibili.com
+hostname = trade-acs.m.taobao.com,api.m.jd.com,weixin110.qq.com,mp.weixin.qq.com,api.bilibili.com,manga.bilibili.com
