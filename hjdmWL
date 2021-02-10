@@ -1,0 +1,4 @@
+[Rule]
+#荟聚动漫跳过检测
+DOMAIN-SUFFIX,umeng.com,DIRECT
+DOMAIN-SUFFIX,adview.cn,DIRECT
