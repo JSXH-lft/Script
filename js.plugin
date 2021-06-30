@@ -10,7 +10,7 @@ http-response ^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newred
 http-request ^https?://boxjs.net script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120, tag=BoxJs.net
 
 [Rule]
-# Youku
+# Youku去广告
 DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com
 DOMAIN-SUFFIX,actives.youku.com
 DOMAIN-SUFFIX,ad.api.3g.tudou.com
