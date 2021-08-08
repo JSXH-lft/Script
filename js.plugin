@@ -12,7 +12,7 @@ http-response ^https?:\/\/hd\.mina\.mi\.com\/splashscreen\/alert requires-body=1
 
 #美团外卖
 
-http-response ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js,tag=美团外卖_开屏去广告
+#http-response ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js,tag=美团外卖_开屏去广告
 
 # Boxjs
 http-request ^https?://boxjs.net script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120, tag=BoxJs.net
@@ -24,7 +24,7 @@ http-request ^https?://boxjs.net script-path=https://raw.githubusercontent.com/c
 ^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+ _ reject
 
 #京东开屏广告屏蔽(改写自surge)
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ _ reject-array
+#^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ _ reject-array
 
 #搬运淘宝(by gitee-木剑)
 #hostname=gw.alicdn.com,heic.alicdn.com
