@@ -12,7 +12,7 @@ http-response ^https?:\/\/hd\.mina\.mi\.com\/splashscreen\/alert requires-body=1
 
 #美团外卖
 
-#http-response ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js,tag=美团外卖_开屏去广告
+http-response ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js,tag=美团外卖_开屏去广告
 
 # Boxjs
 http-request ^https?://boxjs.net script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120, tag=BoxJs.net
@@ -35,71 +35,6 @@ http-request ^https?://boxjs.net script-path=https://raw.githubusercontent.com/c
 
 #高德地图
 DOMAIN,optimus-ads.amap.com,REJECT
-
-# Youku & Tudou
-DOMAIN-SUFFIX,a-dxk.play.api.3g.youku.com
-DOMAIN-SUFFIX,actives.youku.com
-DOMAIN-SUFFIX,ad.api.3g.tudou.com
-DOMAIN-SUFFIX,ad.api.3g.youku.com
-DOMAIN-SUFFIX,ad.api.mobile.youku.com
-DOMAIN-SUFFIX,ad.mobile.youku.com
-DOMAIN-SUFFIX,adcontrol.tudou.com
-DOMAIN-SUFFIX,adplay.tudou.com
-DOMAIN-SUFFIX,b.smartvideo.youku.com
-DOMAIN-SUFFIX,c.yes.youku.com
-DOMAIN-SUFFIX,dev-push.m.youku.com
-DOMAIN-SUFFIX,dl.g.youku.com
-DOMAIN-SUFFIX,dmapp.youku.com
-DOMAIN-SUFFIX,e.stat.ykimg.com
-DOMAIN-SUFFIX,gamex.mobile.youku.com
-DOMAIN-SUFFIX,goods.tudou.com
-DOMAIN-SUFFIX,hudong.pl.youku.com
-DOMAIN-SUFFIX,hz.youku.com
-DOMAIN-SUFFIX,iwstat.tudou.com
-DOMAIN-SUFFIX,iyes.youku.com
-DOMAIN-SUFFIX,l.ykimg.com
-DOMAIN-SUFFIX,l.youku.com
-DOMAIN-SUFFIX,lstat.youku.com
-DOMAIN-SUFFIX,lvip.youku.com
-DOMAIN-SUFFIX,mobilemsg.youku.com
-DOMAIN-SUFFIX,msg.youku.com
-DOMAIN-SUFFIX,myes.youku.com
-DOMAIN-SUFFIX,nstat.tudou.com
-DOMAIN-SUFFIX,p-log.ykimg.com
-DOMAIN-SUFFIX,p.l.ykimg.com
-DOMAIN-SUFFIX,p.l.youku.com
-DOMAIN-SUFFIX,passport-log.youku.com
-DOMAIN-SUFFIX,push.m.youku.com
-DOMAIN-SUFFIX,r.l.youku.com
-DOMAIN-SUFFIX,s.p.youku.com
-DOMAIN-SUFFIX,sdk.m.youku.com
-DOMAIN-SUFFIX,stat.tudou.com
-DOMAIN-SUFFIX,stat.youku.com
-DOMAIN-SUFFIX,stats.tudou.com
-DOMAIN-SUFFIX,store.tv.api.3g.youku.com
-DOMAIN-SUFFIX,store.xl.api.3g.youku.com
-DOMAIN-SUFFIX,tdrec.youku.com
-DOMAIN-SUFFIX,test.ott.youku.com
-DOMAIN-SUFFIX,v.l.youku.com
-DOMAIN-SUFFIX,val.api.youku.com
-DOMAIN-SUFFIX,wan.youku.com
-DOMAIN-SUFFIX,ykatr.youku.com
-DOMAIN-SUFFIX,ykrec.youku.com
-DOMAIN-SUFFIX,ykrectab.youku.com
-IP-CIDR,117.177.248.17/32,no-resolve
-IP-CIDR,117.177.248.41/32,no-resolve
-IP-CIDR,223.87.176.139/32,no-resolve
-IP-CIDR,223.87.176.176/32,no-resolve
-IP-CIDR,223.87.177.180/32,no-resolve
-IP-CIDR,223.87.177.182/32,no-resolve
-IP-CIDR,223.87.177.184/32,no-resolve
-IP-CIDR,223.87.177.43/32,no-resolve
-IP-CIDR,223.87.177.47/32,no-resolve
-IP-CIDR,223.87.177.80/32,no-resolve
-IP-CIDR,223.87.182.101/32,no-resolve
-IP-CIDR,223.87.182.102/32,no-resolve
-IP-CIDR,223.87.182.11/32,no-resolve
-IP-CIDR,223.87.182.52/32,no-resolve
 
 # Others ads in Video apps
 DOMAIN-SUFFIX,acsystem.wasu.tv
