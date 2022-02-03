@@ -11,43 +11,6 @@ http-response ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo? requires-bod
 # Boxjs
 http-request ^https?://boxjs.net script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120, tag=BoxJs.net
 
-[URL Rewrite]
-
-#高德地图广告
-^http:\/\/ems\.youku\.com\/imp\? _ reject
-^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+ _ reject
-
-#京东开屏广告屏蔽(改写自surge)
-#^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ _ reject-array
-
-#搬运淘宝(by gitee-木剑)
-#hostname=gw.alicdn.com,heic.alicdn.com
-^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4}) _ reject-dict
-^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) _ reject-dict
-
-[Rule]
-
-#高德地图
-DOMAIN,optimus-ads.amap.com,REJECT
-
-# Others ads in Video apps
-DOMAIN-SUFFIX,acsystem.wasu.tv
-DOMAIN-SUFFIX,ads.cdn.tvb.com
-DOMAIN-SUFFIX,ads.wasu.tv
-DOMAIN-SUFFIX,afp.wasu.tv
-DOMAIN-SUFFIX,c.algovid.com
-DOMAIN-SUFFIX,cc.xtgreat.com
-DOMAIN-SUFFIX,d.dsp.imageter.com
-DOMAIN-SUFFIX,gg.jtertp.com
-DOMAIN-SUFFIX,gridsum-vd.cntv.cn
-DOMAIN-SUFFIX,kwflvcdn.000dn.com
-DOMAIN-SUFFIX,logstat.t.sfht.com
-DOMAIN-SUFFIX,match.rtbidder.net
-DOMAIN-SUFFIX,n-st.vip.com
-DOMAIN-SUFFIX,pop.uusee.com
-DOMAIN-SUFFIX,static.duoshuo.com
-DOMAIN-SUFFIX,t.cr-nielsen.com
-DOMAIN-SUFFIX,terren.cntv.cn
 
 [MITM]
-hostname = api.m.jd.com, wmapi.meituan.com, gw.alicdn.com,heic.alicdn.com
+hostname = api.m.jd.com, wmapi.meituan.com
